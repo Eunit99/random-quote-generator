@@ -1,0 +1,275 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.body-image {
+    background-color: #755374;
+    background-image: url('../img/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 110vh;
+    width: 110vw;
+    border: 0;
+    position: fixed;
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    bottom: -10px;
+}
+
+a {
+    font-weight: 500;
+}
+
+a:focus,
+span:focus,
+div:focus {
+    border: 1px dotted #924031;
+}
+
+span.heart-plus {
+    margin: 8px;
+}
+
+.codeHeart {
+    color: red !important;
+}
+
+.copyrightArea {
+    width: 100%;
+    position: fixed;
+    bottom: 2vh;
+    left: 30%;
+}
+
+.copyrightArea,
+.copyrightArea a,
+.copyrightArea span {
+    color: #7e7e7e;
+    text-decoration: none;
+    font-size: small;
+}
+
+.content-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.quote-container {
+    background-color: rgb(209, 185, 205);
+    position: absolute;
+    left: 9vw;
+    right: 0;
+    top: 27vh;
+    bottom: 17vh;
+    height: 45vh;
+    width: 88vw;
+    z-index: 1;
+    padding: 20px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.new-quote--container {
+    width: 140px;
+    position: absolute;
+    float: right;
+    right: 0;
+    top: 53vh;
+    cursor: pointer;
+    text-align: center;
+}
+
+.quote-container .quote-title {
+    color: rgb(224, 79, 65);
+    font-weight: bolder;
+    margin: 0 auto 22px;
+    font-size: 20px;
+    font-family: "Pangolin";
+    text-transform: uppercase;
+}
+
+.quote-container .quote-content::before,
+.quote-container .quote-content::after {
+    content: "\"";
+    font-size: 19px;
+    font-family: "Lobster";
+    display: inline;
+    margin: 8px;
+}
+
+.quote-container .quote-content {
+    color: #333;
+    margin: 7px auto;
+    font-size: 18px;
+    font-style: italic;
+    font-family: "Raleway";
+}
+
+#quote-author {
+    font-weight: bold;
+}
+
+.quote-author {
+    text-align: right;
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+.heart {
+    color: #666;
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+.heart-plus {
+    cursor: pointer;
+}
+
+.heart-plus:hover {
+    color: rgb(247, 150, 141);
+}
+
+.favourited {
+    color: #831b08;
+}
+
+.heart-cont {
+    font-family: "Raleway";
+}
+
+.new-quote {
+    padding: 8px 12px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    background-color: #924031;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.new-quote:hover {
+    background-color: #831b08;
+    border: 2px dotted #906772;
+    transition: .8s;
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+    -ms-transition: .8s;
+    -o-transition: .8s;
+}
+
+@media all and (min-width:768px) {
+
+    .quote-container {
+        padding: 28px;
+        width: 80vw;
+    }
+
+    .quote-container .quote-title {
+        font-size: 25px;
+        margin: 0 auto 20px;
+    }
+
+    .quote-container .quote-content {
+        font-size: 26px;
+    }
+
+    .quote-author {
+        font-size: 26px;
+        margin: 20px auto;
+    }
+
+    .new-quote--container {
+        width: 200px;
+        position: absolute;
+        top: 48vh;
+    }
+
+    .new-quote {
+        padding: 16px 16px;
+        font-size: 22px;
+    }
+
+    .heart {
+        margin-top: 18px;
+        font-size: 22px;
+    }
+
+    .quote-container .quote-content::before,
+    .quote-container .quote-content::after {
+        font-size: 25px;
+    }
+
+    .copyrightArea {
+        left: 40%;
+    }
+}
+
+@media all and (min-width:1024px) {
+
+    .quote-container {
+        padding: 44px;
+        width: 70vw;
+        position: absolute;
+        left: 14vw;
+        right: 0;
+    }
+
+    .new-quote--container {
+        position: absolute;
+        top: 48vh;
+    }
+
+    .quote-container .quote-title {
+        font-size: 30px;
+        margin: 0 auto 30px;
+    }
+
+    .quote-container .quote-content {
+        font-size: 36px;
+    }
+
+    .quote-author {
+        font-size: 28px;
+        margin: 20px auto;
+    }
+
+    .new-quote--container {
+        width: 200px;
+    }
+
+    .new-quote {
+        padding: 16px 16px;
+        font-size: 22px;
+    }
+
+    .heart {
+        margin-top: 18px;
+        font-size: 22px;
+    }
+
+    .quote-container .quote-content::before,
+    .quote-container .quote-content::after {
+        font-size: 30px;
+    }
+
+    .copyrightArea {
+        left: 45%;
+    }
+}
