@@ -29,7 +29,7 @@ a {
 a:focus,
 span:focus,
 div:focus {
-    border: 1px dotted #924031;
+    border: 1px dotted #8560bd;
 }
 
 span.heart-plus {
@@ -93,7 +93,7 @@ span.heart-plus {
 }
 
 .quote-container .quote-title {
-    color: rgb(224, 79, 65);
+    color: #220055;
     font-weight: bolder;
     margin: 0 auto 22px;
     font-size: 20px;
@@ -139,11 +139,11 @@ span.heart-plus {
 }
 
 .heart-plus:hover {
-    color: rgb(247, 150, 141);
+    color: #6d39b9;
 }
 
 .favourited {
-    color: #831b08;
+    color: #220055;
 }
 
 .heart-cont {
@@ -155,7 +155,7 @@ span.heart-plus {
     font-weight: 400;
     font-size: 18px;
     color: #fff;
-    background-color: #924031;
+    background-color: #220055;
     border: 1px solid transparent;
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -165,8 +165,8 @@ span.heart-plus {
 }
 
 .new-quote:hover {
-    background-color: #831b08;
-    border: 2px dotted #906772;
+    background-color: #0e0120;
+    border: 2px dotted #8560bd;
     transition: .8s;
     -webkit-transition: .8s;
     -moz-transition: .8s;
